@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account</title>
+
+    <!------- Bootstrap Css Link -------->
+    <link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css" />
+    <!---------Fontawesome---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<!---- Other Css Link------->
+<link rel="stylesheet" href="./css/magnific-popup.css">
+<link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css">
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+<!---- Other Css Link------->
+
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+  </head>
+  <body>
+    <!------ Header --------->
+    <div id="fixed_top">
+      <div class="header_body">
+        <div class="header_logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="header_search">
+          <input type="text" placeholder="Search Here..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="header_sign">
+          <div class="header_sign_part">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-user"></i> Sign In</a>
+            <a href="./register.html">Register</a>
+          </div>
+          <div class="header_cart_part">
+            <a href="./cart_details.html">
+            <div class="cart_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Cart</p>
+              <span>0</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------ End Header --------->
+    <!------- Category Filter -------->
+    <div id="category_filter_part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="cate_filter_div">
+              <button onclick="categoryShow()">
+                <i class="fa-solid fa-list"></i> <span>Browser Category</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <ul id="category_part" style="display: none">
+                <li class="parentMenuItem">
+                  Parent Menu 1
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li>Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------- End Category Filter -------->
+    <!----- BreadCrumb -------->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="breadcremb_part">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><i class="fa-solid fa-chevron-right"></i> Account</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End BreadCrumb -------->
+    <!------- Account  ---------->
+    <div class="container-fluid" id="header_margin_top">
+      <div class="row">
+        <div class="col-12">
+          <div class="account_title">
+            <h1>My Account</h1>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="account_body">
+            <div class="account_list">
+              <ul>
+                <li id="dashboard_btn">Dashboard</li>
+                <li id="info_btn">Customer info</li>
+                <li id="address_btn">Addresses</li>
+                <li id="order_btn">Orders</li>
+                <li id="password_btn">Change password</li>
+              </ul>
+            </div>
+            <div class="account_desc" id="contact">
+              <div class="account_item" id="dashboard_part">
+                <div class="dashboard_top_part">
+                  <p>
+                    From your account dashboard you can view your recent orders
+                    , manage your shipping and billing addresses , and edit your
+                    password .
+                  </p>
+                </div>
+                <div class="dashboard_main_part">
+                  <div class="dashboard_item" id="order_btn2" onclick="myFunction()">
+                    <div class="dashboard_icon">
+                      <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <div class="dashboard_title">
+                      <p>Orders</p>
+                    </div>
+                  </div>
+                  <div class="dashboard_item" id="address_btn2" onclick="myFunction2()">
+                    <div class="dashboard_icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="dashboard_title">
+                      <p>Address</p>
+                    </div>
+                  </div>
+                  <div class="dashboard_item" id="info_btn2" onclick="myFunction3()">
+                    <div class="dashboard_icon">
+                      <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="dashboard_title">
+                      <p>Account Details</p>
+                    </div>
+                  </div>
+                  <div class="dashboard_item">
+                    <div class="dashboard_icon">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                    <div class="dashboard_title">
+                      <p>Logout</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account_item" id="info_part" style="display: none">
+                <div class="account_info_title">
+                  <h2>Account Details</h2>
+                </div>
+                <div class="form_part">
+                  <form action="" class="row g-2">
+                    <div class="col-md-6 col-12">
+                      <label for="phone">Phone*</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Phone Number"
+                        id="phone"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="email">Email (Optional)</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        id="email"
+                      />
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                      <label for="fname">First Name*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                        id="fname"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="lname">Last Name*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                        id="lname"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="birth">Date of birth:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        placeholder="Date of birth"
+                        id="birth"
+                      />
+                    </div>
+
+                    <div class="col-12" id="form_gender">
+                      <label for="email">Gender</label> <br />
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio1"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="inlineRadio1"
+                          >Male</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="inlineRadio2"
+                          >Female</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="country" class="form-label">Country</label>
+                      <select id="country" class="form-select">
+                        <option selected>Bangladesh</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="Division" class="form-label">Division</label>
+                      <select id="Division" class="form-select">
+                        <option selected>Dhaka</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="State" class="form-label"
+                        >Shipping Zone*</label
+                      >
+                      <select id="State" class="form-select">
+                        <option selected>Dhaka</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="Area" class="form-label">Area/Upzila</label>
+                      <select id="Area" class="form-select">
+                        <option selected>Dhaka</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="address">Address*</label>
+                      <textarea
+                        class="form-control"
+                        placeholder="Type Your Address"
+                        name=""
+                        id="address"
+                        cols="30"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check" id="newsletter">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Newsletter
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4 text-center">
+                      <button type="submit">Save Changes</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="account_item" id="address_part" style="display: none">
+                <div class="account_info_title">
+                  <h2>Addresses</h2>
+                  <p>
+                    The following addresses will be used on the checkout page by
+                    default.
+                  </p>
+                </div>
+                <div class="contact_address_basic" id="address_basic_part">
+                  <h4>pro roy</h4>
+                  <p>
+                    <span> Email:</span><span>8801702598789@othoba.com</span>
+                  </p>
+                  <p><span>Phone number:</span><span>017100000000</span></p>
+                  <p><span>Address:</span><span>house 32</span></p>
+                  <p><span>City:</span><span>Dhaka</span></p>
+                  <p><span>Country:</span><span>BD</span></p>
+                  <button id="edit_address_btn">Edit</button>
+                </div>
+                <div
+                  class="form_part"
+                  style="display: none"
+                  id="edir_address_form_part"
+                >
+                  <form action="" class="row g-2">
+                    <div class="col-md-6 col-12">
+                      <label for="fname">First Name*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                        id="fname"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="lname">Last Name*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                        id="lname"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="phone">Phone*</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Phone Number"
+                        id="phone"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="email">Email (Optional)</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        id="email"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="country" class="form-label">Country</label>
+                      <select id="country" class="form-select">
+                        <option selected>Bangladesh</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="Division" class="form-label">Division</label>
+                      <select id="Division" class="form-select">
+                        <option selected>Dhaka</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="State" class="form-label"
+                        >State / province*</label
+                      >
+                      <select id="State" class="form-select">
+                        <option selected>Dhaka</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="Area" class="form-label">Area/Upzila</label>
+                      <select id="Area" class="form-select">
+                        <option selected>Dhaka</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="zip">Zip Code</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="zip"
+                        placeholder="Zip Code"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="address">Address*</label>
+                      <textarea
+                        class="form-control"
+                        placeholder="Type Your Address"
+                        name=""
+                        id="address"
+                        cols="30"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check" id="newsletter">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Is Default Address
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4 text-center">
+                      <button id="back_to_main_adds_div" type="submit">
+                        Save Changes
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="account_item" id="order_part" style="display: none">
+                <div class="acc_order_body">
+                  <!--- If No Oder Found -->
+                  <!-- <div class="acc_no_order">
+                        <h3>No Orders </h3>
+                    </div> -->
+                  <div class="acc_order_items">
+                    <div class="cart_details">
+                      <div class="cart_details_item_part" style="width: 100%">
+                        <div class="cart_details_item_table">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Subtotal</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="cart_details_img_part">
+                                    <div class="cart_details_img">
+                                      <img
+                                        src="./images/hot_deals/hot-1.jpeg"
+                                        alt="hot-1"
+                                      />
+                                    </div>
+                                    <div class="cart_details_img_desc">
+                                      <p>Men’s Stylish Denim Pant Mid Blue</p>
+                                      <p>Size: 34</p>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_price">
+                                    <p>Tk 680</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_qty">
+                                    <p>1</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_sub_total">
+                                    <p>Tk 680</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="cart_details_img_part">
+                                    <div class="cart_details_img">
+                                      <img
+                                        src="./images/hot_deals/hot-2.jpeg"
+                                        alt="hot-1"
+                                      />
+                                    </div>
+                                    <div class="cart_details_img_desc">
+                                      <p>Men’s Stylish Denim Pant Mid Blue</p>
+                                      <p>Size: 34</p>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_price">
+                                    <p>Tk 680</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_qty">
+                                    <p>1</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_sub_total">
+                                    <p>Tk 680</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="cart_details_img_part">
+                                    <div class="cart_details_img">
+                                      <img
+                                        src="./images/hot_deals/hot-3.jpeg"
+                                        alt="hot-1"
+                                      />
+                                    </div>
+                                    <div class="cart_details_img_desc">
+                                      <p>Men’s Stylish Denim Pant Mid Blue</p>
+                                      <p>Size: 34</p>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_price">
+                                    <p>Tk 680</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_qty">
+                                    <p>1</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="cart_details_sub_total">
+                                    <p>Tk 680</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account_item" id="password_part" style="display: none" >
+                <div class="acc_pass_part">
+                  <div class="form_part">
+                    <form action="">
+                      <div class="col-12">
+                        <small class="forgot_pass_title"
+                          >Please Change Your Password Bellow.</small
+                        >
+                      </div>
+                      
+                      <div class="col-12" id="form_pass_show">
+                        <label for="password" class="form-label">Old password</label>
+                        <input type="password" id="password" class="form-control" style="padding-right:5%" placeholder="Enter Old password" value="" />
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </div>
+                    <div class="col-12" id="form_pass_show">
+                      <label for="password2" class="form-label">New password</label>
+                      <input type="password" id="password2" class="form-control" style="padding-right:5%" placeholder="Enter New password" value="" />
+                      <i class="bi bi-eye-slash" id="togglePassword2"></i>
+                  </div>
+                  <div class="col-12" id="form_pass_show">
+                    <label for="password3" class="form-label">Confirm password</label>
+                    <input type="password" id="password3" class="form-control" style="padding-right:5%" placeholder="Enter Confirm password" value="" />
+                    <i class="bi bi-eye-slash" id="togglePassword3"></i>
+                </div>
+
+                      <div class="col-12 mt-4 text-center">
+                        <button type="submit">Change Password</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------- End Account ---------->
+
+    <!----- Footer ------->
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_body">
+              <div class="footer_item">
+                <div class="footer_logo">
+                  <a href="./index.html">
+                    <img src="./images/logo.png" alt="" />
+                  </a>
+                </div>
+                <div class="footer_call">
+                  <p>Got Question? Call us 9 AM- 10 PM</p>
+                </div>
+                <div class="footer_number">
+                  <p>01700000000</p>
+                </div>
+                <div class="footer_social">
+                  <small>Follow Us</small>
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>COMPANY</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Next/Same day delivery TC</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>MY ACCOUNT</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Addresses</a></li>
+                    <li><a href="">My Wishlist</a></li>
+                    <li><a href="">Order History</a></li>
+                    <li><a href="">Track My Order</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>CUSTOMER SERVICE</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Payment Methods</a></li>
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">How To Shop On Neni</a></li>
+                    <li><a href="">Featured Recommendation</a></li>
+                    <li><a href="">Cancellation, Return & Refund</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End Footer ------->
+
+    <!-- Jquery Link ---->
+    <script src="./js/jQuery_v3.7.1.js"></script>
+    <!-- Bootstrap Bundle Js Link------>
+    <script src="./js/bootstrap5.02_bundle_cdn_link.js"></script>
+
+    <!---- Other Js Link ------>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Custom Js Link------>
+    <script src="./js/main.js"></script>
+
+    <!---- Password Show Hide Js Code ------->
+<script>
+  const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+
+      togglePassword.addEventListener("click", function () {
+          // toggle the type attribute
+          const type = password.getAttribute("type") === "password" ? "text" : "password";
+          password.setAttribute("type", type);
+
+          // toggle the icon
+          this.classList.toggle("bi-eye");
+      });
+
+      // prevent form submit
+      const form = document.querySelector("form");
+      form.addEventListener('submit', function (e) {
+          e.preventDefault();
+      });
+
+</script>
+<script>
+  
+  const togglePassword2 = document.querySelector("#togglePassword2");
+      const password2 = document.querySelector("#password2");
+
+      togglePassword2.addEventListener("click", function () {
+          // toggle the type attribute
+          const type2 = password2.getAttribute("type") === "password" ? "text" : "password";
+          password2.setAttribute("type", type2);
+
+          // toggle the icon
+          this.classList.toggle("bi-eye");
+      });
+
+      // prevent form submit
+      const form2 = document.querySelector("form");
+      form2.addEventListener('submit', function (e) {
+          e.preventDefault();
+      });
+
+
+</script>
+<script>
+  
+  const togglePassword3 = document.querySelector("#togglePassword3");
+      const password3 = document.querySelector("#password3");
+
+      togglePassword3.addEventListener("click", function () {
+          // toggle the type attribute
+          const type3 = password3.getAttribute("type") === "password" ? "text" : "password";
+          password3.setAttribute("type", type3);
+
+          // toggle the icon
+          this.classList.toggle("bi-eye");
+      });
+
+      // prevent form submit
+      const form3 = document.querySelector("form");
+      form2.addEventListener('submit', function (e) {
+          e.preventDefault();
+      });
+
+
+</script>
+<!----End Password Show Hide Js Code ------->
+    <!---- Account Section Js code ------->
+    <script>
+      function myFunction() {
+         var element = document.getElementById("order_btn");
+         var element2 = document.getElementById("dashboard_btn");
+         element.classList.add("active_account");
+         element2.classList.remove("active_account");
+      }
+      function myFunction2() {
+         var element3 = document.getElementById("address_btn");
+         var element4 = document.getElementById("dashboard_btn");
+         element3.classList.add("active_account");
+         element4.classList.remove("active_account");
+      }
+      function myFunction3() {
+         var element5 = document.getElementById("info_btn");
+         var element6 = document.getElementById("dashboard_btn");
+         element5.classList.add("active_account");
+         element6.classList.remove("active_account");
+      }
+      </script>
+    <script>
+        $(document).ready(function () {
+        
+          $("#info_btn2").click(function () {
+            $("#info_part").show();
+            $("#dashboard_part").hide();
+          });
+          $("#address_btn2").click(function () {
+            $("#address_part").show();
+            $("#dashboard_part").hide();
+          });
+          $("#order_btn2").click(function () {
+            $("#dashboard_part").hide();
+            $("#order_part").show();
+          });
+        });
+      </script>
+    <script>
+      $(document).ready(function () {
+        $("#dashboard_btn").click(function () {
+          $("#info_part").hide();
+          $("#address_part").hide();
+          $("#order_part").hide();
+          $("#password_part").hide();
+          $("#dashboard_part").show();
+        });
+
+        $("#info_btn").click(function () {
+          $("#info_part").show();
+          $("#address_part").hide();
+          $("#order_part").hide();
+          $("#password_part").hide();
+          $("#dashboard_part").hide();
+        });
+        $("#address_btn").click(function () {
+          $("#address_part").show();
+          $("#info_part").hide();
+          $("#order_part").hide();
+          $("#password_part").hide();
+          $("#dashboard_part").hide();
+        });
+        $("#order_btn").click(function () {
+          $("#dashboard_part").hide();
+          $("#address_part").hide();
+          $("#info_part").hide();
+          $("#password_part").hide();
+          $("#order_part").show();
+        });
+
+        $("#password_btn").click(function () {
+          $("#password_part").show();
+          $("#order_part").hide();
+          $("#info_part").hide();
+          $("#dashboard_part").hide();
+          $("#address_part").hide();
+        });
+      });
+    </script>
+    <!---- End Account Section Js code ------->
+    <!---- Address Section Js code ------->
+    <script>
+      $(document).ready(function () {
+        $("#edit_address_btn").click(function () {
+          $("#address_basic_part").hide();
+          $("#edir_address_form_part").show();
+        });
+
+        $("#back_to_main_adds_div").click(function () {
+          $("#address_basic_part").show();
+          $("#edir_address_form_part").hide();
+        });
+      });
+    </script>
+    <!---- End Address Section Js code ------->
+
+    <!---- Link active JS Code ----->
+    <script>
+      $(document).on("click", "ul li ", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+  
+    <script>
+      $(document).on("click", ".account_list ul li ", function () {
+        $(this)
+          .addClass("active_account")
+          .siblings()
+          .removeClass("active_account");
+      });
+    </script>
+    <!---- End Link active JS Code ----->
+    <!---- Dynamic Year ----->
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

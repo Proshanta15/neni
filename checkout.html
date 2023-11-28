@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut</title>
+
+    <!------- Bootstrap Css Link -------->
+    <link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css" />
+    <!---------Fontawesome---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<!---- Other Css Link------->
+<link rel="stylesheet" href="./css/magnific-popup.css">
+<link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css">
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+<!---- Other Css Link------->
+
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+  </head>
+  <body>
+    <!------ Header --------->
+    <div id="fixed_top">
+      <div class="header_body">
+        <div class="header_logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="header_search">
+          <input type="text" placeholder="Search Here..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="header_sign">
+          <div class="header_sign_part">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-user"></i> Sign In</a>
+            <a href="./register.html">Register</a>
+          </div>
+          <div class="header_cart_part">
+            <a href="./cart_details.html">
+            <div class="cart_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Cart</p>
+              <span>0</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------ End Header --------->
+
+    <!------- Category Filter -------->
+    <div id="category_filter_part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="cate_filter_div">
+              <button onclick="categoryShow()"><i class="fa-solid fa-list"></i> <span>Browser Category</span>  <i class="fa-solid fa-chevron-down"></i></button>
+
+              <ul id="category_part" style="display: none">
+                <li class="parentMenuItem">
+                  Parent Menu 1
+                   <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------- End Category Filter -------->
+
+    <!------- Check Out ---------->
+    <div class="container-fluid" id="header_margin_top">
+      <div class="row">
+        <div class="col-12">
+          <div class="checkout_title">
+            <h1>Checkout</h1>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="check_out_body">
+            <div class="check_out_form">
+              <div class="check_out_form_title">
+                <h4>Address</h4>
+              </div>
+              <div class="check_out_form_body">
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label"
+                      >Phone number<span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="phone"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="fname" class="form-label"
+                      >First Name<span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fname"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lname" class="form-label"
+                      >Last Name<span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lname"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" class="form-select">
+                      <option selected>Bangladesh</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Division" class="form-label">Division</label>
+                    <select id="Division" class="form-select">
+                      <option selected>Dhaka</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="State" class="form-label"
+                      >State / province</label
+                    >
+                    <select id="State" class="form-select">
+                      <option selected>Dhaka</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Area" class="form-label">Area/Upzila</label>
+                    <select id="Area" class="form-select">
+                      <option selected>Dhaka</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Zip" class="form-label"
+                      >Zip / postal code</label
+                    >
+                    <select id="Zip" class="form-select">
+                      <option selected>1023</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id="inputAddress"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="check_out_list">
+              <div class="check_out_list_top">
+                <h2>YOUR order</h2>
+                <p>Your purchase will be delivered in 1 shipment(s)</p>
+                <h6>Product</h6>
+              </div>
+              <div class="check_out_list_items">
+                <div class="check_out_list_items_img">
+                  <a href="./cart.html">
+                    <img src="./images/hot_deals/hot-3.jpeg" alt="" />
+                  </a>
+                </div>
+                <div class="check_out_list_items_desc">
+                  <p>
+                    <a href="./cart.html"
+                      >Men’s Slim-Fit Chino Gabardine Pants Pants</a
+                    >
+                  </p>
+                  <p>Size: 34</p>
+                  <p>Qty: 1</p>
+                </div>
+                <div class="check_out_list_items_price">
+                  <p>Tk 450</p>
+                </div>
+              </div>
+              <div class="check_out_list_items">
+                <div class="check_out_list_items_img">
+                  <a href="./cart.html">
+                    <img src="./images/hot_deals/hot-2.jpeg" alt="" />
+                  </a>
+                </div>
+                <div class="check_out_list_items_desc">
+                  <p>
+                    <a href="./cart.html"
+                      >Men’s Slim-Fit Chino Gabardine Pants Pants</a
+                    >
+                  </p>
+                  <p>Size: 34</p>
+                  <p>Qty: 1</p>
+                </div>
+                <div class="check_out_list_items_price">
+                  <p>Tk 450</p>
+                </div>
+              </div>
+              <div class="check_out_list_bottom">
+                <div class="check_out_list_bottom_text">
+                  <h4>Shipping Methods</h4>
+                  <p>Please add your address.</p>
+                </div>
+
+                <div class="check_out_list_bottom_text">
+                  <h4>Payment Methods</h4>
+                  <p>Please add your address.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------- End Check Out ---------->
+
+    <!----- Footer ------->
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_body">
+              <div class="footer_item">
+                <div class="footer_logo">
+                  <a href="./index.html">
+                    <img src="./images/logo.png" alt="" />
+                  </a>
+                </div>
+                <div class="footer_call">
+                  <p>Got Question? Call us 9 AM- 10 PM</p>
+                </div>
+                <div class="footer_number">
+                  <p>01700000000</p>
+                </div>
+                <div class="footer_social">
+                  <small>Follow Us</small>
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>COMPANY</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Next/Same day delivery TC</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>MY ACCOUNT</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Addresses</a></li>
+                    <li><a href="">My Wishlist</a></li>
+                    <li><a href="">Order History</a></li>
+                    <li><a href="">Track My Order</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>CUSTOMER SERVICE</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Payment Methods</a></li>
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">How To Shop On Neni</a></li>
+                    <li><a href="">Featured Recommendation</a></li>
+                    <li><a href="">Cancellation, Return & Refund</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End Footer ------->
+
+    <!-- Jquery Link ---->
+    <script src="./js/jQuery_v3.7.1.js"></script>
+    <!-- Bootstrap Bundle Js Link------>
+    <script src="./js/bootstrap5.02_bundle_cdn_link.js"></script>
+
+    <!---- Other Js Link ------>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Custom Js Link------>
+    <script src="./js/main.js"></script>
+
+    <!---- Link active ----->
+    <script>
+      $(document).on("click", "ul li ", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+    <!---- Dynamic Year ----->
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

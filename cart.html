@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <!------- Bootstrap Css Link -------->
+    <link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css" />
+     <!---------Fontawesome---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<!---- Other Css Link------->
+<link rel="stylesheet" href="./css/magnific-popup.css">
+<link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css">
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+<!---- Other Css Link------->
+
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+  </head>
+  <body>
+    <!------ Header --------->
+    <div id="fixed_top">
+      <div class="header_body">
+        <div class="header_logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="header_search">
+          <input type="text" placeholder="Search Here..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="header_sign">
+          <div class="header_sign_part">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-user"></i> Sign In</a>
+            <a href="./register.html">Register</a>
+          </div>
+          <div class="header_cart_part">
+            <a href="./cart_details.html">
+            <div class="cart_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Cart</p>
+              <span>0</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------ End Header --------->
+
+     <!------- Category Filter -------->
+     <div id="category_filter_part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="cate_filter_div">
+              <button onclick="categoryShow()"><i class="fa-solid fa-list"></i> <span>Browser Category</span>  <i class="fa-solid fa-chevron-down"></i></button>
+
+              <ul id="category_part" style="display: none">
+                <li class="parentMenuItem">
+                  Parent Menu 1
+                   <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------- End Category Filter -------->
+
+    <!----- BreadCrumb -------->
+    <div class="container-fluid" id="header_margin_top">
+      <div class="row">
+        <div class="col-12">
+          <div class="breadcremb_part" id="similar_item_title">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i
+                ><a href="./sub_category.html">Sub Category</a>
+              </li>
+              <li><i class="fa-solid fa-chevron-right"></i> Cart</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End BreadCrumb -------->
+
+    
+
+    <!----- Cart Body -------->
+    <div class="container-fluid" id="cart_show_parent">
+      <div class="row">
+        <div class="col-12">
+          <div class="product_wrapper">
+            <div class="product_card">
+              <!-- card left -->
+              <div class="product_imgs">
+                <div class="img-display">
+                  <div class="img-showcase">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg"
+                      alt="shoe image"
+                    />
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg"
+                      alt="shoe image"
+                    />
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg"
+                      alt="shoe image"
+                    />
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg"
+                      alt="shoe image"
+                    />
+                  </div>
+                </div>
+                <div class="img-select">
+                  <div class="img-item">
+                    <a href="#" data-id="1">
+                      <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg"
+                        alt="shoe image"
+                      />
+                    </a>
+                  </div>
+                  <div class="img-item">
+                    <a href="#" data-id="2">
+                      <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg"
+                        alt="shoe image"
+                      />
+                    </a>
+                  </div>
+                  <div class="img-item">
+                    <a href="#" data-id="3">
+                      <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg"
+                        alt="shoe image"
+                      />
+                    </a>
+                  </div>
+                  <div class="img-item">
+                    <a href="#" data-id="4">
+                      <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg"
+                        alt="shoe image"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card right -->
+              <div class="product_content">
+                <h2 class="product-title">nike shoes</h2>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>4.7(21)</span>
+                </div>
+
+                <div class="product-price">
+                  <p class="last-price">Old Price: <span>TK 257.00</span></p>
+                  <p class="new-price">New Price: <span>TK 249.00 (5%)</span></p>
+                </div>
+
+                <div class="product-detail">
+                  <h2>about this item:</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo eveniet veniam tempora fuga tenetur placeat sapiente
+                    architecto illum soluta consequuntur, aspernatur quidem at
+                    sequi ipsa!
+                  </p>
+                  
+                  <ul>
+                    <li>Available: <span>in stock</span></li>
+                    <li>Category: <span>Shoes</span></li>
+                    <li>Shipping Area: <span>All over the world</span></li>
+                    <li>Shipping Fee: <span>Free</span></li>
+                  </ul>
+                </div>
+
+                <div class="purchase-info">
+                  <input type="number" min="0" max="10" value="1" />
+                  <a href="./cart_details.html">
+                    Add to Cart <i class="fas fa-shopping-cart"></i>
+                  </a>
+                  <!-- <button type="button" class="btn">Compare</button> -->
+                </div>
+
+               
+              </div>
+
+              <div class="product_pay">
+                <h1>Delevery Option</h1>
+                <ul>
+                  <li>
+                    <div class="pay_icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                   
+                    <div class="pay_desc">
+                      <p>Available Delivery Area: All over the Bangladesh.</p>
+                    </div> 
+               
+                  </li>
+                  <li>
+                    <div class="pay_icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                   
+                    <div class="pay_desc">
+                      <p>Dhaka City North <a href="#">Change</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pay_icon">
+                      <i class="fa-solid fa-truck"></i>
+                    </div>
+                   
+                    <div class="pay_desc">
+                      <p> Delivery Info: </p>
+                      <p class="pay_time">Delivery Time : 1-7 working days</p>
+                      <p class="pay_time">Shipping Charge : Tk 50</p>
+                    </div> 
+                   
+                </li>
+                </ul>
+
+                <div class="social-links">
+                  <div class="social-links_title">
+                    <p>Share At:</p> 
+                  </div>
+                  <div class="social-links_icon">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-pinterest"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!----- End Cart Body -------->
+
+    <!----- product Discription ------->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="cart_des_body">
+            <div class="cart_des_list">
+              <ul>
+                <li class="cart_des_active" id="description">Description</li>
+                <li id="specification">Specification</li>
+                <li id="review">Customer Reviews (1)</li>
+                <li id="question">Question & Answer</li>
+              </ul>
+            </div>
+            <div class="cart_des_list" id="description_body">
+              <p>Brand: Shine</p>
+              <p>Item code: 85954</p>
+              <p>Dimension: L 155 x W 110 x H 122MM</p>
+              <p>Raw materials: ABS</p>
+              <p>Made from highly shiny grade ABS material</p>
+              <p>Good quality MB ensures least possibility of degradation</p>
+              <p>Made Easy to install, load & use</p>
+              <p>Made with state of art technology & unique design.</p>
+              <p>Color: As given in the picture.</p>
+              <p>Note: Product delivery duration may vary due to product availability in stock.</p>
+            </div>
+            <div class="cart_des_list" id="specification_body" style="display: none;">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit cumque quam similique doloribus natus porro?</p>
+            </div>
+            <div class="cart_des_list" id="reviews_body" style="display: none;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem nisi incidunt non a aspernatur obcaecati rerum assumenda minus facilis?</p>
+            </div>
+            <div class="cart_des_list" id="question_body" style="display: none;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt eveniet ex, culpa, magnam nihil totam ipsum dignissimos quas nobis doloribus officia quaerat nisi reprehenderit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End product Discription ------->
+
+    <!------ Similar Item -------->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="hot_top_title" id="similar_item_title">
+            <!--- Make this title dynamic---->
+            <h3>Similar Products</h3>
+            <a href="./more_products.html"
+              >More Products <i class="fa-solid fa-right-long"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="cart_similar_item">
+            <div class="sub_item_body">
+              <div class="cart_main_body">
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/1.jpeg"
+                        alt="hot-1"
+                      />
+                      <span class="discount_tag" style="visibility: visible;">
+                        <span class="discount_text" >20% Off</span>
+                    </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/2.jpeg"
+                        alt="hot-1"
+                      />
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/3.jpeg"
+                        alt="hot-1"
+                      />
+                      <span class="discount_tag" style="visibility: visible;">
+                        <span class="discount_text" >20% Off</span>
+                    </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                      src="./images/recomonded/4.jpeg"
+                      alt="hot-1"
+                    />
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                      src="./images/recomonded/5.jpeg"
+                      alt="hot-1"
+                    />
+                    <span class="discount_tag" style="visibility: visible;">
+                      <span class="discount_text" >20% Off</span>
+                  </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/6.jpeg"
+                        alt="hot-1"
+                      />
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/1.jpeg"
+                        alt="hot-1"
+                      />
+                      <span class="discount_tag" style="visibility: visible;">
+                        <span class="discount_text" >20% Off</span>
+                    </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/2.jpeg"
+                        alt="hot-1"
+                      />
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/3.jpeg"
+                        alt="hot-1"
+                      />
+                      <span class="discount_tag" style="visibility: visible;">
+                        <span class="discount_text" >20% Off</span>
+                    </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/1.jpeg"
+                        alt="hot-1"
+                      />
+                      <span class="discount_tag" style="visibility: visible;">
+                        <span class="discount_text" >20% Off</span>
+                    </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/2.jpeg"
+                        alt="hot-1"
+                      />
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/3.jpeg"
+                        alt="hot-1"
+                      />
+                      <span class="discount_tag" style="visibility: visible;">
+                        <span class="discount_text" >20% Off</span>
+                    </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                      src="./images/recomonded/4.jpeg"
+                      alt="hot-1"
+                    />
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                      src="./images/recomonded/5.jpeg"
+                      alt="hot-1"
+                    />
+                    <span class="discount_tag" style="visibility: visible;">
+                      <span class="discount_text" >20% Off</span>
+                  </span>
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="cart_item">
+                  <a href="./cart.html">
+                    <div class="cart_item_img">
+                      <img
+                        src="./images/recomonded/6.jpeg"
+                        alt="hot-1"
+                      />
+                    </div>
+                    <div class="cart_item_desc">
+                      <p class="cart_name">Men’s Stylish Denim Pant</p>
+                      <p class="cart_star">
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+  
+                        <span class="cart_review">(1 reviews)</span>
+                      </p>
+                      <p>
+                        <span class="cart_price">TK 750</span>
+                        <span class="cart_discount">TK 1200</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="cart_pagination">
+                <div class="pagi_total_item">
+                  <p>Showing <span>1 - 72 of 844 </span> Products</p>
+                </div>
+                <div class="pagi_prev_next">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!------ End Similar Item -------->
+
+    <!----- Footer ------->
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_body">
+              <div class="footer_item">
+                <div class="footer_logo">
+                  <a href="./index.html">
+                    <img src="./images/logo.png" alt="" />
+                  </a>
+                </div>
+                <div class="footer_call">
+                  <p>Got Question? Call us 9 AM- 10 PM</p>
+                </div>
+                <div class="footer_number">
+                  <p>01700000000</p>
+                </div>
+                <div class="footer_social">
+                  <small>Follow Us</small>
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>COMPANY</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Next/Same day delivery TC</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>MY ACCOUNT</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Addresses</a></li>
+                    <li><a href="">My Wishlist</a></li>
+                    <li><a href="">Order History</a></li>
+                    <li><a href="">Track My Order</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>CUSTOMER SERVICE</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Payment Methods</a></li>
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">How To Shop On Neni</a></li>
+                    <li><a href="">Featured Recommendation</a></li>
+                    <li><a href="">Cancellation, Return & Refund</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End Footer ------->
+
+    <!-- Jquery Link ---->
+    <script src="./js/jQuery_v3.7.1.js"></script>
+    <!-- Bootstrap Bundle Js Link------>
+    <script src="./js/bootstrap5.02_bundle_cdn_link.js"></script>
+
+    <!---- Other Js Link ------>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Custom Js Link------>
+    <script src="./js/main.js"></script>
+
+    <!----- Cart Description Js ------>
+    <script>
+      $(document).ready(function () {
+        $("#description").click(function () {
+          $("#specification_body").hide();
+          $("#reviews_body").hide();
+          $("#question_body").hide();
+          $("#description_body").show();
+        });
+
+        $("#specification").click(function () {
+          $("#description_body").hide();
+          $("#reviews_body").hide();
+          $("#question_body").hide();
+          $("#specification_body").show();
+        });
+
+        $("#review").click(function () {
+          $("#description_body").hide();
+          $("#specification_body").hide();
+          $("#question_body").hide();
+          $("#reviews_body").show();
+        });
+
+        $("#question").click(function () {
+          $("#description_body").hide();
+          $("#specification_body").hide();
+          $("#reviews_body").hide();
+          $("#question_body").show();
+        });
+      });
+    </script>
+    <!----- End Cart Description Js ------>
+    <!---- Cart image Js----->
+    <script>
+      const imgs = document.querySelectorAll(".img-select a");
+      const imgBtns = [...imgs];
+      let imgId = 1;
+
+      imgBtns.forEach((imgItem) => {
+        imgItem.addEventListener("click", (event) => {
+          event.preventDefault();
+          imgId = imgItem.dataset.id;
+          slideImage();
+        });
+      });
+
+      function slideImage() {
+        const displayWidth = document.querySelector(
+          ".img-showcase img:first-child"
+        ).clientWidth;
+
+        document.querySelector(".img-showcase").style.transform = `translateX(${
+          -(imgId - 1) * displayWidth
+        }px)`;
+      }
+
+      window.addEventListener("resize", slideImage);
+    </script>
+    <!---- End Cart image Js----->
+    <!---- Link active ----->
+    <script>
+      $(document).on("click", ".cart_des_list ul li ", function () {
+        $(this).addClass("cart_des_active").siblings().removeClass("cart_des_active");
+      });
+    </script>
+
+    <!---- Dynamic Year ----->
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

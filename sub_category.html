@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neni</title>
+
+    <!------- Bootstrap Css Link -------->
+    <link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css" />
+     <!---------Fontawesome---------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<!---- Other Css Link------->
+<link rel="stylesheet" href="./css/magnific-popup.css">
+<link rel="stylesheet" href="./css/bootstrap5.02_cdn_link.css">
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+<!---- Other Css Link------->
+
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/responsive.css">
+  </head>
+  <body>
+    <!------ Header --------->
+    <div id="fixed_top">
+      <div class="header_body">
+        <div class="header_logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="header_search">
+          <input type="text" placeholder="Search Here..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="header_sign">
+          <div class="header_sign_part">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-user"></i> Sign In</a>
+            <a href="./register.html">Register</a>
+          </div>
+          <div class="header_cart_part">
+            <a href="./cart_details.html">
+            <div class="cart_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Cart</p>
+              <span>0</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------ End Header --------->
+
+    <!------- Category Filter -------->
+    <div id="category_filter_part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="cate_filter_div">
+              <button onclick="categoryShow()"><i class="fa-solid fa-list"></i> <span>Browser Category</span>  <i class="fa-solid fa-chevron-down"></i></button>
+
+              <ul id="category_part" style="display: none">
+                <li class="parentMenuItem">
+                  Parent Menu 1
+                   <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 1 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <li> Submenu Item 1</li>
+                    <li>Submenu Item 2</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+                <li class="parentMenuItem">
+                  Parent Menu 2 <span><i class="fa-solid fa-angle-right"></i></span>
+                  <ul class="submenu">
+                    <li>Submenu Item A</li>
+                    <li>Submenu Item B</li>
+                    <!-- Add more submenu items as needed -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------- End Category Filter -------->
+
+    <!---- Sub Category ----->
+    <div id="same_bg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="category">
+              <div class="carousel">
+                <div class="owl-carousel owl-theme" id="category_items">
+                  <a href="./sub_category.html">
+                    <div class="category_item">
+                      <div class="category_img">
+                        <img src="./images/food-grocery.webp" />
+                      </div>
+                      <div class="category_title">
+                        <p>Traditional Foods & Fruits</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./sub_category.html">
+                    <div class="category_item">
+                      <div class="category_img">
+                        <img src="./images/household-festival.jpeg" />
+                      </div>
+                      <div class="category_title">
+                        <p>Flat For Sale</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- End Sub Category ----->
+
+    <!--- Top Slider ----->
+    <div class="slider_top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="slider_top_part">
+              <div class="carousel">
+                <div class="owl-carousel owl-theme">
+                  <a href="#">
+                    <div class="slider_top_part_item">
+                      <div class="slider_top_part_img">
+                        <img src="./images/top_slider-1.png" />
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="slider_top_part_item">
+                      <div class="slider_top_part_img">
+                        <img src="./images/top_slider-2.png" />
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="slider_top_part_item">
+                      <div class="slider_top_part_img">
+                        <img src="./images/top_slider-3.png" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- End Top Slider ----->
+
+    <!----- BreadCrumb -------->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="breadcremb_part">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><i class="fa-solid fa-chevron-right"></i> Sub Category</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End BreadCrumb -------->
+
+    <!----- Sub Category Body ------>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="sub_body">
+            <div class="sub_filter" id="small_filter_div">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Categories
+                    </button>
+                    <i
+                      id="filter_close_btn"
+                      onclick="closeFilter()"
+                      class="fa-solid fa-xmark"
+                    ></i>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="category_filter filter_same_text">
+                        <ul>
+                          <li><a href="">Blender & Grinder</a></li>
+                          <li><a href="">Electric Kettle</a></li>
+                          <li><a href="">Ovens</a></li>
+                          <li><a href="">Gas Stove</a></li>
+                          <li><a href="">Kitchenware Item</a></li>
+                          <li><a href="">Cooker Hood</a></li>
+                          <li><a href="">Air Fryer</a></li>
+                          <li><a href="">Cooker</a></li>
+                          <li><a href="">Blender & Grinder</a></li>
+                          <li><a href="">Electric Kettle</a></li>
+                          <li><a href="">Ovens</a></li>
+                          <li><a href="">Gas Stove</a></li>
+                          <li><a href="">Kitchenware Item</a></li>
+                          <li><a href="">Cooker Hood</a></li>
+                          <li><a href="">Air Fryer</a></li>
+                          <li><a href="">Cooker</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Capacity
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="category_filter filter_same_text">
+                        <ul>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                0-02 Liters
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                02-3.5 Liter
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Color
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="category_filter filter_same_text">
+                        <ul>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                Black
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                White
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                Red
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Size
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="category_filter filter_same_text">
+                        <ul>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                32
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                42
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                52
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      Filter By Brand
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="category_filter filter_same_text">
+                        <ul>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                Orpat
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                RFL Gas Stove
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                RFL Cooker Hood
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      Filter By Rating
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="category_filter filter_same_text">
+                        <ul>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                <i class="fa-solid fa-star"></i>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sub_items_body">
+              <div class="sub_short">
+                <div class="short_by">
+                  <div class="short_by_title">
+                    <i
+                      id="filter_phn_view_btn"
+                      onclick=" changeStyle()"
+                      class="fa-solid fa-list-ul"
+                    ></i>
+                    <h4>Short By</h4>
+                  </div>
+                  <div class="short_by_item">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Position</option>
+                      <option value="5">Name: A to Z</option>
+                      <option value="6">Name: Z to A</option>
+                      <option value="10">Price: Low to High</option>
+                      <option value="11">Price: High to Low</option>
+                      <option value="15">New Arrivals</option>
+                      <option value="20">Featured</option>
+                      <option value="25">Rating</option>
+                      <option value="26">Admin By Position</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="short_show">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Show 72</option>
+                    <option value="96">Show 96</option>
+                    <option value="120">Show 120</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sub_item_body">
+                <div class="cart_main_body">
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/1.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/2.jpeg" alt="hot-1" />
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/3.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/4.jpeg" alt="hot-1" />
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/5.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/6.jpeg" alt="hot-1" />
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/1.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/2.jpeg" alt="hot-1" />
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/3.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/1.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/2.jpeg" alt="hot-1" />
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/3.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/4.jpeg" alt="hot-1" />
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/5.jpeg" alt="hot-1" />
+                        <span class="discount_tag" style="visibility: visible">
+                          <span class="discount_text">20% Off</span>
+                        </span>
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart_item">
+                    <a href="./cart.html">
+                      <div class="cart_item_img">
+                        <img src="./images/recomonded/6.jpeg" alt="hot-1" />
+                      </div>
+                      <div class="cart_item_desc">
+                        <p class="cart_name">Men’s Stylish Denim Pant</p>
+                        <p class="cart_star">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+
+                          <span class="cart_review">(1 reviews)</span>
+                        </p>
+                        <p>
+                          <span class="cart_price">TK 750</span>
+                          <span class="cart_discount">TK 1200</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="cart_pagination">
+                  <div class="pagi_total_item">
+                    <p>Showing <span>1 - 72 of 844 </span> Products</p>
+                  </div>
+                  <div class="pagi_prev_next">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                          <a
+                            class="page-link"
+                            href="#"
+                            tabindex="-1"
+                            aria-disabled="true"
+                            >Previous</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End Sub Category Body ------>
+
+    <!----- Footer ------->
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_body">
+              <div class="footer_item">
+                <div class="footer_logo">
+                  <a href="./index.html">
+                    <img src="./images/logo.png" alt="" />
+                  </a>
+                </div>
+                <div class="footer_call">
+                  <p>Got Question? Call us 9 AM- 10 PM</p>
+                </div>
+                <div class="footer_number">
+                  <p>01700000000</p>
+                </div>
+                <div class="footer_social">
+                  <small>Follow Us</small>
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>COMPANY</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Next/Same day delivery TC</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>MY ACCOUNT</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Addresses</a></li>
+                    <li><a href="">My Wishlist</a></li>
+                    <li><a href="">Order History</a></li>
+                    <li><a href="">Track My Order</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_item">
+                <div class="footer_same_title">
+                  <h4>CUSTOMER SERVICE</h4>
+                </div>
+                <div class="footer_same_link">
+                  <ul>
+                    <li><a href="">Payment Methods</a></li>
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">How To Shop On Neni</a></li>
+                    <li><a href="">Featured Recommendation</a></li>
+                    <li><a href="">Cancellation, Return & Refund</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- End Footer ------->
+
+    <!-- Jquery Link ---->
+    <script src="./js/jQuery_v3.7.1.js"></script>
+    <!-- Bootstrap Bundle Js Link------>
+    <script src="./js/bootstrap5.02_bundle_cdn_link.js"></script>
+
+    <!---- Other Js Link ------>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Custom Js Link------>
+    <script src="./js/main.js"></script>
+
+   
+
+    <!------- Phone View Filter Js Code------->
+    <script>
+      function changeStyle() {
+        var element = document.getElementById("small_filter_div");
+        element.style.display = "block";
+      }
+    </script>
+    <script>
+      function closeFilter() {
+        var element = document.getElementById("small_filter_div");
+        element.style.display = "none";
+      }
+    </script>
+  <!------- End Phone View Filter Js Code------->
+
+    <!---- Link active ----->
+    <script>
+      $(document).on("click", "ul li ", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+    <!---- Dynamic Year ----->
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
